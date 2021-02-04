@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Password Generator";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h2>Create your new password!</h2>
+<br />
+<h3> Some instructions and clarifications first :</h3>
+<p>Just type a combination of letter and numbers and our algorithm will transform it into a usable password</p>
+<p></p>
+<p> You'll have access to your previous entries at all times</p>
+<br />
+<p> Don't</p>
+<form>
+    <label for="Password">Enter the text and numbers you wish to passwordify!</label>
+    <input type="text" id="textToPswd" maxlength="50" minlenght="8"/>
+    <input type="submit" value="Passwordify" />
+</form>
+
+<form>
+    <label for="CreatedPassword"> Your newly made password </label>
+    <input readonly />
+</form>
+
