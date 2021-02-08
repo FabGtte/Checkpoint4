@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 public class UniteLegaleContext : DbContext
 {
-    public DbSet<OldPassword> OldPasswords { get; set; }
+    public DbSet<WordToPassword> WordToPasswords { get; set; }
 
-    public DbSet<NewPassword> NewPasswords { get; set; }
+    public DbSet<GeneratedPassword> GeneratedPasswords { get; set; }
     public UniteLegaleContext(DbContextOptions<UniteLegaleContext> options)
     : base(options)
     {

@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace Checkpoint4.Models
 {
-    public class OldPassword
+    public class GeneratedPassword
     {
-        private string title { get; set; }
         private string password { get; set; }
-        private string description { get; set; }
+
+        private int cypherKey { get; set; }
     }
 }

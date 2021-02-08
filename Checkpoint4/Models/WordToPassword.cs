@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 
 namespace Checkpoint4.Models
 {
-    public class NewPassword
+    public class WordToPassword
     {
         private string title { get; set; }
         private string password { get; set; }
         private string description { get; set; }
+        private List<GeneratedPassword> GeneratedPasswords { get; set; }
     }
 }
